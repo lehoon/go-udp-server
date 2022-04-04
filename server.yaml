@@ -1,0 +1,22 @@
+daemon:
+  pid: daemon.pid
+  log: daemon.log
+
+agentserver:
+  addr: 192.168.1.56
+  port: 8301
+  heartbeat: 30
+  connectTimeout: 15
+
+local:
+  addr: 192.168.1.100
+  udpServer: 0.0.0.0:9000
+
+logger:
+  maxSize: 32
+  maxAge: 7
+  maxBackup: 30
+  compress: false
+  level: 0
+  serviceName: devops-agent
+  logPath: ./logs/devops-agent.log
